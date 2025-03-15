@@ -1,0 +1,33 @@
+p {
+    font-size: 12px; 
+    text-align: center;
+}
+
+.h2 {
+    font-weight: 700; 
+    padding-left: 0px; 
+    margin-bottom: 24px;
+}
+
+.col {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.row {
+    margin-left: 0px;
+}
+
+.h4 {
+    padding-left: 0px; 
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #43708C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
