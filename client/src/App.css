@@ -14,15 +14,20 @@
 }
 
 body {
-  background-image: linear-gradient(#E4ECF0, #43708C);
-  /* background-color: #282c34; */
+  background-image: repeating-linear-gradient(180deg,
+  #2E3047,
+  #2E3047 75px, 
+  #3C3F58 75px,
+  #3C3F58 100px
+  );
+  /* background-color: #2E3047; */
   min-height: 100vh;
   display: flex;
   flex-direction: row; 
   align-items: center; 
   justify-content: center; 
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #3BBA9C;
 }
 
 .App-link {
