@@ -18,7 +18,7 @@ import useLogin from "../hooks/useLogin";
 function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const {loading, error, loginUser} = useLogin();
+  const { loading, error, loginUser } = useLogin();
 
   const [errors, setErrors] = useState({
     email: [],
@@ -47,16 +47,16 @@ function SignIn() {
   return (
     <div className="block block-SignIn" id="SignIn" style={{ width: "900px" }}>
       <Container fluid>
-        <Row>
-          <Col>
+        <Row
+          style={{ minHeight: 500, alighnItems: "stretch", display: "flex" }}
+        >
+          <Col style={{ display: "flex", alignItems: "center" }}>
             <Image
               src={Auth_img}
-              height={450}
-              width={500}
-              style={{ paddingRight: 0 }}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </Col>
-          <Col>
+          <Col style={{ display: "flex", alignItems: "center" }}>
             <Container
               fluid
               style={{
@@ -117,8 +117,12 @@ function SignIn() {
                 {error && <Alert variant="danger">{error}</Alert>}
 
                 <div style={{ display: "flex", justifyContent: "center" }}>
-                  <Button className="btn" type={loading ? "" : "primary"} onClick={validate}>
-                  {loading ? <Spinner /> : "Sign In"}
+                  <Button
+                    className="btn"
+                    type={loading ? "" : "primary"}
+                    onClick={validate}
+                  >
+                    {loading ? <Spinner /> : "Sign In"}
                   </Button>
                 </div>
               </Form>

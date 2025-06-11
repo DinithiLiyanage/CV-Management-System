@@ -50,16 +50,16 @@ function SignUp() {
   return (
     <div className="block block-SignUp" id="SignIn" style={{ width: "1000px" }}>
       <Container fluid>
-        <Row>
-          <Col>
+        <Row
+          style={{ minHeight: 500, alighnItems: "stretch", display: "flex" }}
+        >
+          <Col style={{ display: "flex", alignItems: "center" }}>
             <Image
               src={Auth_img}
-              height="100%"
-              width={500}
-              style={{ paddingRight: 0 }}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </Col>
-          <Col>
+          <Col style={{ display: "flex", alignItems: "center" }}>
             <Container
               fluid
               style={{

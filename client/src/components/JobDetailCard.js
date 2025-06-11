@@ -1,9 +1,9 @@
 import React from "react";
 import BookmarkBorder from "@mui/icons-material/BookmarkBorder";
 import Bookmark from "@mui/icons-material/Bookmark";
+import BusinessIcon from '@mui/icons-material/Business';
 
 const JobDetailCard = ({
-  logo,
   position,
   company,
   location,
@@ -23,7 +23,8 @@ const JobDetailCard = ({
   return (
     <div style={styles.card}>
       <div style={styles.header}>
-        <img src={logo} alt="Company Logo" style={styles.logo} />
+        <BusinessIcon/>
+        <div style={{ flex: 1 }} />
         <button style={styles.saveButton} onClick={handleBookMark}>
           {isSaved ? <Bookmark /> : <BookmarkBorder />}
         </button>
@@ -31,7 +32,9 @@ const JobDetailCard = ({
       <div style={styles.body}>
         <h3 style={styles.position}>{position}</h3>
         <p style={styles.company}>
-          {company} - {location}
+          {company}
+          <br />
+          {location}
         </p>
       </div>
       <div style={styles.footer}>
@@ -77,6 +80,7 @@ const styles = {
     borderRadius: "4px",
     padding: "4px",
     cursor: "pointer",
+    alignSelf: "flex-end",
   },
   body: {
     marginBottom: "16px",
@@ -89,6 +93,7 @@ const styles = {
   company: {
     margin: 0,
     textAlign: "left",
+    fontSize: "14px",
   },
   footer: {
     display: "flex",

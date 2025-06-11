@@ -14,12 +14,7 @@
 }
 
 body {
-  background-image: repeating-linear-gradient(180deg,
-  #2E3047,
-  #2E3047 75px, 
-  #3C3F58 75px,
-  #3C3F58 100px
-  );
+  background: linear-gradient(135deg,#2E3047 0%, #61668d 50%, #2E3047 100%);
   /* background-color: #2E3047; */
   min-height: 100vh;
   display: flex;
